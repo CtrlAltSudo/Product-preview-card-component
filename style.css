@@ -1,46 +1,93 @@
 body {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3ebe4;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ebe4;
 }
 #cardContainer {
-    display: flex;
-
+  display: flex;
 }
 .textContainer {
-    flex-basis: auto;
-    max-width: 19rem;
-    background-color: white;
-    border-radius: 0 0.8rem 0.8rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    box-sizing: border-box;
-    padding: 2rem;
+  flex-basis: auto;
+  max-width: 19rem;
+  background-color: white;
+  border-radius: 0 0.8rem 0.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  box-sizing: border-box;
+  padding: 2rem 2rem 0 2rem;
 }
 .imgContainer {
-    flex-basis: auto;
-    max-width: 19rem;
-    border-radius: 0.8rem 0 0 0.8rem;
+  flex-basis: auto;
+  max-width: 19rem;
+  border-radius: 0.8rem 0 0 0.8rem;
 }
 img {
-    height: auto;
-    width: 100%;
-    display: block;
-    border-radius: 0.8rem 0 0 0.8rem;
+  height: auto;
+  width: 100%;
+  display: block;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+h1 {
+  margin: 0;
+  letter-spacing: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: grey;
+}
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 1;
+  margin: 1.2rem 0 1.2rem 0rem;
 }
 p {
-    margin: 0;
+  font-size: 0.9rem;
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+}
+.pricing {
+  display: flex;
+  gap: 1rem;
+  margin: 0.8rem 0 0.8rem 0;
+}
+.discountedPrice {
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  color: #3d8168;
+}
+.regularPrice {
+  align-self: center;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  min-width: 100%;
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
 }
 
-button {
-    min-height: 3rem;
-    min-width: 100%;
-    background-color: #3d8168;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
+.cartIcon {
+  width: 1rem;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  #cardContainer {
+    flex-direction: column;
+  }
 }
