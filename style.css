@@ -5,13 +5,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f3ebe4;
+  margin: 0;
+  flex-direction: column;
 }
 #cardContainer {
   display: flex;
 }
 .textContainer {
   flex-basis: auto;
-  max-width: 19rem;
   background-color: white;
   border-radius: 0 0.8rem 0.8rem 0;
   display: flex;
@@ -19,17 +20,22 @@ body {
   gap: 0.2rem;
   box-sizing: border-box;
   padding: 2rem 2rem 0 2rem;
+  max-width: 20rem;
+  
 }
 .imgContainer {
   flex-basis: auto;
-  max-width: 19rem;
   border-radius: 0.8rem 0 0 0.8rem;
+  max-width: 20rem;
 }
-img {
+.desktopImg {
   height: auto;
   width: 100%;
   display: block;
   border-radius: 0.8rem 0 0 0.8rem;
+}
+.mobileImg {
+    display: none;
 }
 h1 {
   margin: 0;
@@ -86,8 +92,29 @@ button {
   width: 1rem;
   height: auto;
 }
+
 @media only screen and (max-width: 600px) {
   #cardContainer {
     flex-direction: column;
+  }
+  .mobileImg {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .desktopImg{
+    display: none;
+  }
+  .textContainer {
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin: 0;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  body {
+    min-height: 90vh;
+  }
+  .pricing, h2 {
+    margin: 0;
   }
 }
