@@ -1,5 +1,5 @@
 <h1 align="center">Product-preview-card-component</h1>
-<p align="center"> <a align="center" href="https://ctrlaltsudo.github.io/FM-QR-code-component">Live Demo</a><p>
+<p align="center"> <a align="center" href="https://ctrlaltsudo.github.io/Product-preview-card-component/">Live Demo</a><p>
 <p align="center"> <a align="center" href="https://www.frontendmentor.io/solutions/product-preview-card-component-I2MQmRTOpy">Solution Page</a><p>
 <h2 align="center">Project Screenshot<h2>
 <p align="center">
